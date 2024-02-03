@@ -1,0 +1,132 @@
+/* float type tag= none, left, right */
+/* teks wrapping, image gallery, multi-column layout */
+/* clear type tag = left, right, both (untuk mengehentikan/membersihkan float) */
+body {
+  background-color: antiquewhite;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container1 {
+  border: 1px solid black;
+  margin: auto;
+  width: 600px;
+  padding: 5px;
+  /* Float akan menganggap img,atau class utama saat memakai overflow (menyesuaikan dengan tabel)*/
+  /* overflow bukan solusi yang tepat, tetapi sebuah mengakali elemen float */
+  /* overflow: auto; */
+}
+
+/* contoh pembersihan float harus menyesuaikan arah pengguna float tersebut*/
+.clear {
+  clear: right;
+}
+
+/* contoh penggunaan float text wrapping */
+.logo1 {
+  float: right;
+  width: 300px;
+  margin: 10px;
+}
+
+/* paragraf biar teks akurasi  */
+.p1 {
+  text-align: justify;
+}
+
+/* contoh penggunaan image gallery */
+/* float saat diberi elemen 1 tidak menganggap elemen ke 2 (sembunyi dibelakang elemen 1) */
+
+.container2 {
+  border: 1px solid black;
+  margin: auto;
+  width: 600px;
+  padding: 5px;
+  margin-top: 30px;
+  overflow: auto;
+}
+
+.clear2 {
+  clear: left;
+}
+
+.kotak {
+  background-color: lightcoral;
+  color: white;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  float: left;
+  margin: 2px;
+  font-size: 30px;
+}
+
+.p2 {
+    text-align: justify;
+}
+
+
+/* contoh penggunaan multi-column layout */
+/* ukuran harus menyesuaikan dalam penjumlahan pas tabel contoh= widht 800px */
+.container3 {
+  width: 800px;
+  border: 1px solid black;
+  margin: auto;
+  padding: 5px;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+.clear3 {
+  /* kalau misal arah diantara float ada yang berbeda */
+  clear: both;
+}
+
+.kiri {
+  background-color: brown;
+  width: 150px;
+  height: 500px;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.tengah {
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  float: left;
+}
+
+.kanan {
+  background-color: violet;
+  width: 150px;
+  height: 500px;
+  float: right;
+}
+
+
+
+/* lebih kerapian dalam clear float*/
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}

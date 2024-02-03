@@ -1,0 +1,42 @@
+/* value display ada 4 = inline, inline-block , block, none*/
+
+/* ukuran widh height tidak dapat diubah dalam display inline */
+
+/* elemen display : none (akan menghilangkan suatu elemen) */
+
+.navigation a {
+  background-color: pink;
+  /* mengatur ukuran bisa aktif bila menggunakan display: inline-block; */
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+}
+
+/* img bisa mengubah ukuran widh dan height dalam display inline (default)*/
+img {
+  width: 200px;
+  height: 200px;
+}
+
+/* elemen block = h1-h6, p, ol, ul, li, form, hr, div, .. */
+.main {
+  background-color: rgb(0, 132, 255);
+}
+
+/* bentuk prilaku elemen block pada suatu wadah  */
+.main h2 {
+  background-color: red;
+}
+
+/* mengubah display dalam sebuah elemen*/
+.display-mengubah li {
+  display: inline;
+}
+
+/* menghias judul ajah */
+.header {
+  color: lightpink;
+  font-size: 20px;
+  font-variant: small-caps;
+  text-align: center;
+}

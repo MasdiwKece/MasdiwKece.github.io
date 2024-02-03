@@ -1,0 +1,42 @@
+/* Belajar tentang dimensi&overflow */
+
+/* widh, height satuan = px, %, in, cm, mm, pt, pc */
+
+/* div { 
+    background-color: lightpink;
+    width: 50%;
+    height: 200px;
+}*/
+
+.satu {
+    background-color: tomato;
+    width: 50%;
+    height: 200px;
+}
+
+.dua {
+    background-color: blanchedalmond;
+    width: 100%;
+}
+
+/* teks bakal sambung kebawah bila ukurannya sudah ditentukan cth= widht 200px */
+.paragraf {
+    background-color: rgb(59, 121, 255);
+    width: 200px;
+    height: 200px;
+
+/* overflow = auto (aktif saat paragraf teks sudah banyak) */
+
+/* overflow = hidden (teks akan menyusaikan bg nya tetapi sambungan teks terpotong (tersembunyi) */
+
+/* overflow = scroll (akan tetap muncul bila teks terlalu pendek */
+
+    overflow: scroll;
+}
+    
+/* hanya menambah sedikit (tidak penting) */
+.satu {
+    margin-bottom: 2%;
+}
+
+/* overflow type tag = visible, auto, hidden, scroll */
